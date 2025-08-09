@@ -3,7 +3,8 @@ def word_count(str):
     return len(words)
 
 def char_count(str):
-    char_list = list(str)
+    lowercased = str.lower()
+    char_list = list(lowercased)
     char_set = set(char_list)
     count = {}
     for char in char_set:
