@@ -11,8 +11,12 @@ def char_count(str):
         count[char] = char_list.count(char)
     return count
 
+def num_sort(dict):
+    return dict["num"]
+
 def sort_chars(chars):
     list = []
     for c in chars:
         list.append({"char":c, "num":chars[c]})
+    list.sort(reverse=True, key=num_sort)
     return list
