@@ -10,3 +10,9 @@ def char_count(str):
     for char in char_set:
         count[char] = char_list.count(char)
     return count
+
+def sort_chars(chars):
+    list = []
+    for c in chars:
+        list.append({"char":c, "num":chars[c]})
+    return list
