@@ -6,6 +6,7 @@ def char_count(str):
     lowercased = str.lower()
     char_list = list(lowercased)
     char_set = set(char_list)
+    char_set.discard("\n") # the output was going to the next line. no one wants to count that anyways.
     count = {}
     for char in char_set:
         count[char] = char_list.count(char)
